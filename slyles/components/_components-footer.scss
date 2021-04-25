@@ -1,0 +1,78 @@
+.c-footer {
+    background-color: $gray-800;
+    color: $gray-500;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px 100px;
+
+    * {
+        font-size: 12px;
+    }
+
+    &__list {
+        padding-right: 60px;
+
+        div {
+            line-height: 1.5;
+        }
+
+        b {
+            font-weight: 800;
+            color: $gray-400;
+        }
+    }
+
+    &__link {
+        display: grid;
+        align-items: center;
+        width: 50%;
+
+        li:hover,
+        a:hover {
+            color: white;
+        }
+
+        a {
+            color: $gray-500;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    &__link1,
+    &__link2 {
+        position: relative;
+        padding-left: 40px !important;
+        gap: 7px;
+    }
+
+    &__link1::before,
+    &__link2::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background-color: $gray-500;
+        height: 70px;
+    }
+    
+    &__link1::before {
+        left: 0;
+    }
+    
+    &__link2::after {
+        right: 0;
+    }
+
+    &__contact {
+        padding-left: 50px;
+
+        &-list {
+            display: grid;
+            gap: 7px;
+        }
+    } 
+}

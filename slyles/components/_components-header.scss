@@ -1,0 +1,27 @@
+.c-header {
+    background-image: url(./assest/images/header.png);
+    width: 100%;
+    margin: 0 auto;
+    height: 450px;
+}
+
+.c-heading {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+    align-items:center;
+
+    * {
+        color: white;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    span {
+        font-family: 'Libre Baskerville', cursive;
+    }
+}

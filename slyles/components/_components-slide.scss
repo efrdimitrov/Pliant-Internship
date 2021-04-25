@@ -1,0 +1,99 @@
+.c-main {
+    &__slider   {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+  
+    &__slides{
+        width: 500%;
+        height: 150px;
+        display: flex;
+
+        input {
+            display: none;
+        }
+    }
+  
+    &__slide{
+        width: 20%;
+        transition: 2s;
+        opacity: 0.6;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+  
+    &__navigation-manual {
+        position: absolute;
+        width: 89%;
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+    }
+  
+    &__manual-btn{
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        color: transparent;
+
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+
+        &:hover{
+            background: white;
+        }
+    
+    }
+
+    &__navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 89%;
+        justify-content: center;
+        margin-top: 120px;
+
+        div {
+            border: 2px solid white;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+  
+    #radio1:checked ~ &__first{
+        margin-left: 0;
+    }
+  
+    #radio2:checked ~ &__first{
+        margin-left: -20%;
+    }
+  
+    #radio3:checked ~ &__first{
+        margin-left: -40%;
+    }
+  
+    #radio1:checked ~ &__navigation-auto &__auto-btn1{
+        background: white;
+    }
+  
+    #radio2:checked ~ &__navigation-auto &__auto-btn2{
+        background: white;
+    }
+  
+    #radio3:checked ~ &__navigation-auto &__auto-btn3{
+        background: white;
+    }
+}
+
+  

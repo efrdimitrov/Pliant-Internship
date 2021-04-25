@@ -1,0 +1,107 @@
+.c-main {
+    &__login a {
+        margin-left: 60%;
+    }
+
+    &__register a {
+        margin-left: 30%;
+    }
+    
+    &__sign {
+        width: 100%;
+        display: flex;
+        background: linear-gradient(100deg, $cyan-900 50%, $emerald-500 50%);
+        & * {
+            width: 50%;
+            height: 70px;
+        }
+
+        &-link {
+            color: white;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__designers {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+
+        &-info {
+            border-right: 4px dotted $gray-100;
+            margin: 30px 100px;
+            padding-right: 80px;  
+            
+            p {
+                color: $gray-400;
+                font-size: 18px;
+            }
+        }
+
+        &-list {
+            display: grid;
+            padding: 35px;
+            grid-template-rows: 1fr 0.3fr 0.3fr 0.3fr;
+            justify-items: center;
+
+            span {
+                color: $gray-400;
+                font-weight: 600;
+            }
+        }
+
+        &-img {
+            border-radius: 50%;
+            border: 5px solid $blue-gary-100;
+        }
+
+        &-name {
+            font-weight: 700;
+            color: $gray-600;
+        }
+
+        &-social {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            i:hover {
+                color: $light-blue-600;
+            }
+        } 
+    }
+
+    &__servers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 60px;
+            text-align: center;
+
+            p {
+                color: $gray-400;
+                font-size: 12px;
+            }
+        }
+
+        &-img {
+            width: 50px;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        &-haeding {
+            color: $gray-600;
+            font-size: 14px;
+            font-weight: 800;
+        }
+    }
+
+}
